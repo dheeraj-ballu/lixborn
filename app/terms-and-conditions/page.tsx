@@ -1,4 +1,38 @@
 import React from 'react';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Terms and Conditions | Commercial Trade Governance | Lixbor Auron LLP',
+  description:
+    'Review general commercial terms, non-binding quote provisions, trade confidentiality, and governing law for Lixbor Auron LLP website services and B2B inquiries.',
+  alternates: {
+    canonical: '/terms-and-conditions',
+  },
+  openGraph: {
+    title: 'Terms and Conditions | Lixbor Auron LLP',
+    description:
+      'Legal and commercial terms governing commodity inquiries, trade contracts, and procurement processes with Lixbor Auron LLP.',
+    url: 'https://lixborauron.com/terms-and-conditions',
+    siteName: 'Lixbor Auron LLP',
+    locale: 'en_US',
+    type: 'website',
+    images: [
+      {
+        url: '/images/hero/hero-1.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Lixbor Auron LLP Terms and Conditions',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Terms and Conditions | Lixbor Auron LLP',
+    description:
+      'Legal and commercial terms governing commodity inquiries, trade contracts, and procurement processes with Lixbor Auron LLP.',
+    images: ['/images/hero/hero-1.webp'],
+  },
+};
 
 export default function TermsAndConditionsPage() {
   return (

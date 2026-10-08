@@ -1,8 +1,42 @@
 import React, { Suspense } from 'react';
+import type { Metadata } from 'next';
 import { ContactForm } from '../../components/sections/ContactForm';
 import { FAQSection } from '../../components/sections/FAQSection';
 import { companyDetailFields } from '../../lib/content/contact';
 import { companyData } from '../../lib/content/company';
+
+export const metadata: Metadata = {
+  title: 'Contact Trading Desk | Request Commercial RFQ | Lixbor Auron LLP',
+  description:
+    'Submit commercial RFQs, technical specification requests, Certificate of Analysis (COA) queries, or discuss physical supply contracts with Lixbor Auron LLP.',
+  alternates: {
+    canonical: '/contact',
+  },
+  openGraph: {
+    title: 'Contact Our Trading Desk | Lixbor Auron LLP',
+    description:
+      'Direct commercial communication channels for procurement managers, chemical importers, and industrial buyers worldwide.',
+    url: 'https://lixborauron.com/contact',
+    siteName: 'Lixbor Auron LLP',
+    locale: 'en_US',
+    type: 'website',
+    images: [
+      {
+        url: '/images/hero/hero-1.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Lixbor Auron LLP Commercial Inquiries Desk',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Contact Our Trading Desk | Lixbor Auron LLP',
+    description:
+      'Direct commercial communication channels for procurement managers, chemical importers, and industrial buyers worldwide.',
+    images: ['/images/hero/hero-1.webp'],
+  },
+};
 
 export default function ContactPage() {
   return (

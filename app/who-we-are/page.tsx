@@ -1,6 +1,40 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import { Timeline } from '../../components/sections/TimelineItem';
 import { timelineMilestones, coreValuesData, visionData, companyStoryData } from '../../lib/content/who-we-are';
+
+export const metadata: Metadata = {
+  title: 'Who We Are | Corporate Heritage & Global Sourcing Platform | Lixbor Auron LLP',
+  description:
+    'Leadership roots dating to 1989 in industrial manufacturing, evolving into a 2026 global commodities platform delivering reliable supply of chemicals, fertilizers, and polymers.',
+  alternates: {
+    canonical: '/who-we-are',
+  },
+  openGraph: {
+    title: 'Who We Are | Corporate Heritage & Global Trading Model | Lixbor Auron LLP',
+    description:
+      'From 1989 industrial roots to an international physical commodities trading platform. Discover our values, journey, and end-to-end supply discipline.',
+    url: 'https://lixborauron.com/who-we-are',
+    siteName: 'Lixbor Auron LLP',
+    locale: 'en_US',
+    type: 'website',
+    images: [
+      {
+        url: '/images/hero/hero-3.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Lixbor Auron LLP Corporate Heritage and Global Sourcing',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Who We Are | Corporate Heritage & Global Trading Model | Lixbor Auron LLP',
+    description:
+      'From 1989 industrial roots to an international physical commodities trading platform. Discover our values, journey, and end-to-end supply discipline.',
+    images: ['/images/hero/hero-3.webp'],
+  },
+};
 
 export default function WhoWeArePage() {
   return (

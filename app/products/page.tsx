@@ -1,6 +1,40 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { productsData, mgoFlagshipGrades } from '../../lib/content/products';
+
+export const metadata: Metadata = {
+  title: 'Products Portfolio | Magnesium Oxide (MgO), Chemicals & Polymers | Lixbor Auron LLP',
+  description:
+    'Sourcing and physical supply of Agricultural, Feed, and Technical grade Magnesium Oxide (MgO), Urea, Granular Sulphur, Melamine, and engineered polymers.',
+  alternates: {
+    canonical: '/products',
+  },
+  openGraph: {
+    title: 'Products Portfolio | Magnesium Oxide, Chemicals & Polymers | Lixbor Auron LLP',
+    description:
+      'Explore certified industrial commodity grades: MgO (Agri, Feed, Technical), Urea DEF/Technical, Sulphur, Melamine, and Polymer resins.',
+    url: 'https://lixborauron.com/products',
+    siteName: 'Lixbor Auron LLP',
+    locale: 'en_US',
+    type: 'website',
+    images: [
+      {
+        url: '/images/hero/hero-2.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Lixbor Auron LLP Products Portfolio - Magnesium Oxide, Chemicals and Polymers',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Products Portfolio | Magnesium Oxide, Chemicals & Polymers | Lixbor Auron LLP',
+    description:
+      'Explore certified industrial commodity grades: MgO (Agri, Feed, Technical), Urea DEF/Technical, Sulphur, Melamine, and Polymer resins.',
+    images: ['/images/hero/hero-2.webp'],
+  },
+};
 
 export default function ProductsPage() {
   const chemicalsAndFertilizers = productsData.filter((p) => p.category === 'Chemicals & Fertilizers');

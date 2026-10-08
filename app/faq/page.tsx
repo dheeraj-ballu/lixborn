@@ -1,10 +1,39 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { FAQSection } from '../../components/sections/FAQSection';
 
-export const metadata = {
-  title: 'Frequently Asked Questions | Lixbor Auron LLP',
-  description: 'Find clear answers to questions about Lixbor Auron LLP products, business experience, inquiry handling, quality standards, and quotation process.',
+export const metadata: Metadata = {
+  title: 'Frequently Asked Questions | B2B Trading & Quality FAQs | Lixbor Auron LLP',
+  description:
+    'Find clear answers to questions about Lixbor Auron LLP products, Magnesium Oxide grades, supply chain verification, delivery terms, and inquiry process.',
+  alternates: {
+    canonical: '/faq',
+  },
+  openGraph: {
+    title: 'Frequently Asked Questions | Lixbor Auron LLP',
+    description:
+      'Clear answers on industrial commodities, sourcing heritage, quality assurance, Incoterms, and commercial quotation handling.',
+    url: 'https://lixborauron.com/faq',
+    siteName: 'Lixbor Auron LLP',
+    locale: 'en_US',
+    type: 'website',
+    images: [
+      {
+        url: '/images/hero/hero-3.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Lixbor Auron LLP Frequently Asked Questions',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Frequently Asked Questions | Lixbor Auron LLP',
+    description:
+      'Clear answers on industrial commodities, sourcing heritage, quality assurance, Incoterms, and commercial quotation handling.',
+    images: ['/images/hero/hero-3.webp'],
+  },
 };
 
 export default function FAQPage() {

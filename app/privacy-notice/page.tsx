@@ -1,4 +1,38 @@
 import React from 'react';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Privacy Notice | Commercial Data Protection | Lixbor Auron LLP',
+  description:
+    'Learn how Lixbor Auron LLP collects, protects, and handles corporate commercial data and trade inquiry information in compliance with data privacy standards.',
+  alternates: {
+    canonical: '/privacy-notice',
+  },
+  openGraph: {
+    title: 'Privacy Notice | Lixbor Auron LLP',
+    description:
+      'Data privacy and corporate confidentiality policies governing commercial communications with Lixbor Auron LLP.',
+    url: 'https://lixborauron.com/privacy-notice',
+    siteName: 'Lixbor Auron LLP',
+    locale: 'en_US',
+    type: 'website',
+    images: [
+      {
+        url: '/images/hero/hero-1.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Lixbor Auron LLP Data Privacy Notice',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Privacy Notice | Lixbor Auron LLP',
+    description:
+      'Data privacy and corporate confidentiality policies governing commercial communications with Lixbor Auron LLP.',
+    images: ['/images/hero/hero-1.webp'],
+  },
+};
 
 export default function PrivacyNoticePage() {
   return (

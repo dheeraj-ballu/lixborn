@@ -1,8 +1,42 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { VeritaseHero } from '../components/sections/VeritaseHero';
 import { VeritaseCards } from '../components/sections/VeritaseCards';
 import { FAQSection } from '../components/sections/FAQSection';
+
+export const metadata: Metadata = {
+  title: 'Global Commodity Sourcing & Physical Supply Trading | Lixbor Auron LLP',
+  description:
+    'Independent international commodities trading company connecting industrial buyers with certified Magnesium Oxide (MgO), fertilizers, chemicals, and polymers.',
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Lixbor Auron LLP | Global Commodity Sourcing & Physical Supply Trading',
+    description:
+      'Independent international commodities trading company connecting industrial buyers with certified Magnesium Oxide (MgO), fertilizers, chemicals, and polymers.',
+    url: 'https://lixborauron.com',
+    siteName: 'Lixbor Auron LLP',
+    locale: 'en_US',
+    type: 'website',
+    images: [
+      {
+        url: '/images/hero/hero-1.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Lixbor Auron LLP - Global Commodity Sourcing and Physical Trade',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Lixbor Auron LLP | Global Commodity Sourcing & Physical Supply Trading',
+    description:
+      'Independent international commodities trading company connecting industrial buyers with certified Magnesium Oxide (MgO), fertilizers, chemicals, and polymers.',
+    images: ['/images/hero/hero-1.webp'],
+  },
+};
 
 export default function HomePage() {
   return (

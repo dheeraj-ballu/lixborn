@@ -91,7 +91,7 @@ export const VeritaseHero: React.FC = () => {
             <img
               key={isActive ? `active-hero-zoom-${currentSlide}` : `inactive-hero-${idx}`}
               src={imageSrc}
-              alt={s.headlineTitle}
+              alt={`${s.headlineTitle} — ${s.subtitle}`}
               onError={() => handleImageError(s.localImage)}
               className={`absolute inset-0 h-full w-full object-cover object-center ${
                 isActive ? zoomAnimationClass : (idx % 2 === 0 ? 'scale-100' : 'scale-110')
