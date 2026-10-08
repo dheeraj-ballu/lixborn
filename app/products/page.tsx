@@ -74,13 +74,13 @@ export default function ProductsPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
             {mgoFlagshipGrades.map((grade) => (
-              <div key={grade.code} className="bg-slate-50 border border-slate-200 rounded-2xl p-6 space-y-4 flex flex-col justify-between hover:border-emerald-500 transition-colors">
+              <div key={grade.code} className="bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-8 space-y-4 flex flex-col justify-between hover:border-emerald-500 transition-colors">
                 <div className="space-y-3">
                   <span className="text-xs font-mono font-bold text-emerald-600 uppercase tracking-widest block">{grade.code}</span>
                   <h3 className="text-xl font-bold text-slate-900">{grade.name}</h3>
-                  <p className="text-xs text-slate-600 font-light leading-relaxed">{grade.description}</p>
+                  <p className="text-xs sm:text-sm text-slate-600 font-light leading-relaxed">{grade.description}</p>
                 </div>
                 <div className="pt-4 border-t border-slate-200">
                   <span className="text-[10px] uppercase font-semibold text-slate-400 block mb-2">Key Applications:</span>

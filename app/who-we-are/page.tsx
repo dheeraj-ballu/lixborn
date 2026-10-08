@@ -123,7 +123,7 @@ export default function WhoWeArePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
             {visionData.pillars.map((pillar, i) => (
               <div key={i} className="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-md space-y-3">
                 <span className="text-xs font-mono text-emerald-400 font-bold">0{i + 1}</span>

@@ -235,28 +235,33 @@ export const ContactForm: React.FC = () => {
             <label htmlFor="product" className="block text-xs font-semibold uppercase tracking-wider text-slate-700">
               Product Interested In
             </label>
-            <select
-              id="product"
-              name="product"
-              value={formData.product}
-              onChange={handleChange}
-              className="w-full rounded-lg border border-slate-300 bg-slate-50/50 px-4 py-3 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all appearance-none cursor-pointer"
-            >
-              <option value="">— Select a product —</option>
-              {/* Build grouped options from the canonical products data */}
-              {Array.from(new Set(productsData.map((p) => p.category))).map((category) => (
-                <optgroup key={category} label={category}>
-                  {productsData
-                    .filter((p) => p.category === category)
-                    .map((p) => (
-                      <option key={p.id} value={p.name}>
-                        {p.isFlagship ? `★ ${p.name}` : p.name}
-                      </option>
-                    ))}
-                </optgroup>
-              ))}
-              <option value="Other / Multiple Products">Other / Multiple Products</option>
-            </select>
+            <div className="relative">
+              <select
+                id="product"
+                name="product"
+                value={formData.product}
+                onChange={handleChange}
+                className="w-full rounded-lg border border-slate-300 bg-slate-50/50 pl-4 pr-10 py-3 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all appearance-none cursor-pointer"
+              >
+                <option value="">— Select a product —</option>
+                {/* Build grouped options from the canonical products data */}
+                {Array.from(new Set(productsData.map((p) => p.category))).map((category) => (
+                  <optgroup key={category} label={category}>
+                    {productsData
+                      .filter((p) => p.category === category)
+                      .map((p) => (
+                        <option key={p.id} value={p.name}>
+                          {p.isFlagship ? `★ ${p.name}` : p.name}
+                        </option>
+                      ))}
+                  </optgroup>
+                ))}
+                <option value="Other / Multiple Products">Other / Multiple Products</option>
+              </select>
+              <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3.5 text-slate-400">
+                <Icon name="ChevronDown" size={16} />
+              </div>
+            </div>
           </div>
         </div>
 

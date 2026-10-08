@@ -148,19 +148,21 @@ export const VeritaseHero: React.FC = () => {
               type="button"
               key={idx}
               onClick={() => setCurrentSlide(idx)}
-              className="relative h-[3px] w-10 sm:w-16 bg-white/30 rounded-full overflow-hidden cursor-pointer hover:bg-white/40 transition-colors"
+              className="group py-3 px-1 cursor-pointer focus:outline-none"
               aria-label={`Go to slide ${idx + 1}`}
             >
-              <div
-                key={isActive ? `active-${currentSlide}` : `inactive-${idx}`}
-                className={`absolute inset-y-0 left-0 rounded-full ${
-                  isActive
-                    ? 'w-full bg-white animate-hero-progress'
-                    : isPast
-                    ? 'w-full bg-white'
-                    : 'w-0 bg-transparent'
-                }`}
-              />
+              <div className="relative h-[3px] w-8 sm:w-16 bg-white/30 group-hover:bg-white/50 rounded-full overflow-hidden transition-colors">
+                <div
+                  key={isActive ? `active-${currentSlide}` : `inactive-${idx}`}
+                  className={`absolute inset-y-0 left-0 rounded-full ${
+                    isActive
+                      ? 'w-full bg-white animate-hero-progress'
+                      : isPast
+                      ? 'w-full bg-white'
+                      : 'w-0 bg-transparent'
+                  }`}
+                />
+              </div>
             </button>
           );
         })}
