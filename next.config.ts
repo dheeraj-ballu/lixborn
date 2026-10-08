@@ -3,10 +3,12 @@ import type { NextConfig } from "next";
 const ONE_YEAR = 60 * 60 * 24 * 365; // 31,536,000 seconds
 
 const nextConfig: NextConfig = {
+  output: 'export',
   allowedDevOrigins: ['192.168.144.191', 'localhost:3000'],
 
   // All images are now served locally — no remote patterns needed
   images: {
+    unoptimized: true,
     remotePatterns: [],
   },
 
