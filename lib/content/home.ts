@@ -9,8 +9,7 @@ export const homeHeroData = {
   ctaPrimaryLink: '/products',
   ctaSecondaryText: 'Contact Sourcing Desk',
   ctaSecondaryLink: '/contact',
-  backgroundImage:
-    'https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=2000&q=80',
+  backgroundImage: '/images/hero/hero-1.webp',
 };
 
 export const homeIntroData = {
@@ -38,7 +37,7 @@ export const homeDealInData = {
       description: 'High-grade agricultural nutrients, automotive additives, and industrial process raw materials.',
       highlightProducts: ['Magnesium Oxide (MgO)', 'Urea', 'Granular Sulphur', 'Melamine'],
       href: '/products#chemicals-fertilizers',
-      image: 'https://images.unsplash.com/photo-1616886307848-7f6635699c43?auto=format&fit=crop&w=800&q=80',
+      image: '/images/cards/card-1.webp',
     },
     {
       id: 'polymers',
@@ -46,7 +45,7 @@ export const homeDealInData = {
       description: 'Specialized thermoplastic compounds engineered for electrical cables, automotive, and packaging applications.',
       highlightProducts: ['XLPE Compounds', 'Semiconductive Compounds', 'ABS Resins', 'LDPE Polymer'],
       href: '/products#polymers',
-      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80',
+      image: '/images/cards/card-2.webp',
     },
     {
       id: 'mgo-specialty',
@@ -54,7 +53,7 @@ export const homeDealInData = {
       description: 'Flagship sourcing program covering Agricultural, Feed Grade, and Technical applications.',
       highlightProducts: ['Agricultural Grade', 'Animal Nutrition Grade', 'Technical Grade'],
       href: '/products#mgo-focus',
-      image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80',
+      image: '/images/cards/card-3.webp',
     },
   ],
 };

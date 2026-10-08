@@ -24,7 +24,7 @@ export const Hero: React.FC<HeroProps> = ({
   ctaPrimaryLink = '/products',
   ctaSecondaryText = 'Contact Desk',
   ctaSecondaryLink = '/contact',
-  backgroundImage = 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=2000&q=80',
+  backgroundImage = '/images/hero/hero-1.webp',
   compact = false,
 }) => {
   return (

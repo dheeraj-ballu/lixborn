@@ -5,8 +5,7 @@ export const whoWeAreHeroData = {
   title: 'Global Sourcing. Industrial Expertise. Reliable Supply.',
   description:
     'A professionally managed trading company engaged in international sourcing, trading and distribution of chemicals, fertilizers and polymers.',
-  backgroundImage:
-    'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=2000&q=80',
+  backgroundImage: '/images/hero/hero-3.webp',
 };
 
 export const companyStoryData = {

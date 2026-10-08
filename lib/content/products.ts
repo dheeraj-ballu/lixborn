@@ -42,7 +42,7 @@ export const productsData: Product[] = [
       'Low heavy-metal profiles certified for feed applications',
       'Controlled reactivity (Light Burned / Caustic Calcined)',
     ],
-    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=80',
+    image: '/images/products/magnesium-oxide.webp',
   },
   {
     id: 'urea',
@@ -61,7 +61,7 @@ export const productsData: Product[] = [
       'Grades: Technical / Industrial Grade, Automotive / DEF Grade',
       'Low biuret options for technical & industrial applications',
     ],
-    image: 'https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?auto=format&fit=crop&w=1000&q=80',
+    image: '/images/products/urea.webp',
   },
   {
     id: 'granular-sulphur',
@@ -81,7 +81,7 @@ export const productsData: Product[] = [
       'Form: Bright Yellow Granular (2-6mm)',
       'Low ash and moisture content',
     ],
-    image: 'https://images.unsplash.com/photo-1616886307848-7f6635699c43?auto=format&fit=crop&w=1000&q=80',
+    image: '/images/products/granular-sulphur.webp',
   },
   {
     id: 'melamine',
@@ -101,7 +101,7 @@ export const productsData: Product[] = [
       'Appearance: Fine White Powder',
       'Low pH volatility and moisture content',
     ],
-    image: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=1000&q=80',
+    image: '/images/products/melamine.webp',
   },
   {
     id: 'xlpe',
@@ -121,7 +121,7 @@ export const productsData: Product[] = [
       'Excellent dielectric strength & thermal breakdown resistance',
       'Compliant with international IEC cable standards',
     ],
-    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1000&q=80',
+    image: '/images/products/xlpe.webp',
   },
   {
     id: 'semiconductive-compounds',
@@ -141,7 +141,7 @@ export const productsData: Product[] = [
       'Smooth surface extrusion quality',
       'High compatibility with XLPE insulation layers',
     ],
-    image: 'https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?auto=format&fit=crop&w=1000&q=80',
+    image: '/images/products/semiconductive-compounds.webp',
   },
   {
     id: 'abs',
@@ -161,7 +161,7 @@ export const productsData: Product[] = [
       'High impact strength and heat resistance',
       'Custom color compounding options',
     ],
-    image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1000&q=80',
+    image: '/images/products/abs.webp',
   },
   {
     id: 'ldpe',
@@ -181,6 +181,6 @@ export const productsData: Product[] = [
       'High tensile strength & tear resistance',
       'Food-contact compliant grades available',
     ],
-    image: 'https://images.unsplash.com/photo-1530587191325-3db32d826c18?auto=format&fit=crop&w=1000&q=80',
+    image: '/images/products/ldpe.webp',
   },
 ];
